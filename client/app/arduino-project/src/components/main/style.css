@@ -1,0 +1,76 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(110deg, #92D1C3 60%, #8BB8A8 60%);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.forms {
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+.forms form {
+    margin: 2em 0;
+}
+
+.forms .field {
+    display: flex;
+    flex-flow: column-reverse;
+    margin-bottom: 1em;
+    background-color: transparent;
+}
+
+.forms label, .forms input {
+    transition: all 0.2s;
+    touch-action: manipulation;
+}
+
+.forms input {
+    font-size: 1.5em;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    font-family: inherit;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0;
+    cursor: text;
+    background-color: transparent;
+}
+
+.forms input:focus {
+    outline: 0;
+    border-bottom: 1px solid #666;
+}
+
+.forms label {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+input:placeholder-shown+label {
+    cursor: text;
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: left bottom;
+    transform: translate(0, 2.125rem) scale(1.5);
+}
+
+.forms ::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+input:not(:placeholder-shown)+label, input:focus+label {
+    text-align: left;
+    transform: translate(0, 0) scale(1);
+    cursor: pointer;
+}

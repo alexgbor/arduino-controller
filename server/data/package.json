@@ -1,0 +1,19 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.1.5"
+  },
+  "devDependencies": {
+    "dotenv": "^5.0.1",
+    "expect": "^23.0.1"
+  }
+}

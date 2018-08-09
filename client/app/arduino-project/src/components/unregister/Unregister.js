@@ -35,7 +35,7 @@ class Unregister extends Component {
                 if (r === true) {
                     localStorage.removeItem("id-app")
                     localStorage.removeItem("token-app")
-                    this.history.push('/')
+                    this.props.history.push('/')
                 }
                 else {
                     this.toggle()
